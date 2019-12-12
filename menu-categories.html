@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Restaurante Online</title>
+    <!--link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet"-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--link rel="stylesheet" href="css/bootstrap.css"-->
+    <link rel="stylesheet"  href="css/stylesRest.css">
+    <link href="https://fonts.googleapis.com/css?family=Oxygen:300,400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700&display=swap" rel="stylesheet">       
+</head>
+<body>
+    <header>
+        <nav id="header-nav" class="navbar navbar-default">
+            <div class="container">  <!--Pirmer container es para el encabezado, incluido el menu desplegable-->
+                <div class="navbar-header">
+                    <a href="index.html" class="pull-left">
+                        <div id="logo-img"></div>
+                    </a>
+
+                    <div class="navbar-brand">
+                        <a href="index.html"><h1>Fastest Fast food</h1></a>
+                        <p>
+                            <img src="fotos/FDA.png" alt="Food & drug Administration Certification">
+                            <span>FDA certified.</span>
+                        </p>
+                    </div>
+
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+
+                <div id="collapsable-nav" class="collapse navbar-collapse">
+                    <ul id="nav-list" class="nav navbar-nav navbar-right">
+                      <li class="visible-xs">
+                          <a href="index.html">
+                            <span class="glyphicon glyphicon-home"></span> Home
+                          </a>
+                      </li>
+                     <li>
+                        <a href="#"><span class="glyphicon glyphicon-certificate"></span><br class="hidden-xs"> Ofertas</a>                       
+                     </li>                     
+                     <li class="active">
+                        <a href="menu-categories.html"><span class="glyphicon glyphicon-cutlery"></span><br class="hidden-xs"> Menu</a>
+                     </li>
+                     <li>
+                        <a href="#"><span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs"> Acerca</a>
+                     </li>
+                     <li id="phone" class="hidden-xs">
+                       <a href="tel:986123123">
+                         <span>986123123</span></a><div>* A domicilio</div>
+                     </li>
+                   </ul><!-- #nav-list -->
+                </div><!-- .collapse .navbar-collapse -->            
+            </div>
+        </nav>
+    </header>
+
+    <div id="call-btn" class="visible-xs text-center">
+        <a class="btn" href="tel:986123123">
+            <span class="glyphicon glyphicon-earphone"></span>
+            986123123
+        </a>
+        <div  id="xs-deliver" class="text-center visible-xs">* A domicilio</div>  <!--Lo podemos sacar del div del telef pero dentro es mas facilS de editar, 2x1-->
+    </div>
+    
+
+    <div id="main-content" class="container"> <!--segundo container es para el cuerpo que incluira los menus con sus fotos-->
+        <h2 id="menu-categories-title" class="text-center">Nuestras opciones de Menu</h2>
+        <div class="text-center">
+          Ofrecemos opciones sin gluten y para veganos<br>
+          A las 15:45 cerramos la cocina.
+        </div>
+        
+        <section class="row">
+          <div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+            <a href="single-category.html">
+              <div class="category-tile">
+                <img width="200" height="200" src="fotos/A1.jpg" alt="Comida">
+                <div class="overlay">  <!--el overlay es para mostrar algo cuando hacemos hover sobre la imagen-->
+                  <div class="text-image-hover">Comida</div>
+                </div>
+                <span>Comida 1</span>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+            <a href="single-category.html">
+              <div class="category-tile">
+                <img width="200" height="200" src="fotos/A2.jpg" alt="Comida">
+                <div class="overlay">  
+                  <div class="text-image-hover">Comida</div>
+                </div>
+                <span>Comida 2</span>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+            <a href="single-category.html">
+              <div class="category-tile">
+                <img width="200" height="200" src="fotos/A3.jpg" alt="Comida">
+                <div class="overlay">  
+                  <div class="text-image-hover">Comida</div>
+                </div>
+                <span>Comida 3</span>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+            <a href="single-category.html">
+              <div class="category-tile">
+                <img width="200" height="200" src="fotos/A4.jpg" alt="Comida">
+                <div class="overlay">  
+                  <div class="text-image-hover">Comida</div>
+                </div>
+                <span>Comida 4</span>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+            <a href="single-category.html">
+              <div class="category-tile">
+                <img width="200" height="200" src="fotos/A5.jpg" alt="Comida">
+                <div class="overlay">  
+                  <div class="text-image-hover">Comida</div>
+                </div>
+                <span>Comida 5</span>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+            <a href="single-category.html">
+              <div class="category-tile">
+                <img width="200" height="200" src="fotos/A6.jpg" alt="Comida">
+                <div class="overlay">  
+                  <div class="text-image-hover">Comida</div>
+                </div>
+                <span>Comida 6</span>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+            <a href="single-category.html">
+              <div class="category-tile">
+                <img width="200" height="200" src="fotos/B1.jpg" alt="Comida">
+                <div class="overlay">  
+                  <div class="text-image-hover">Comida</div>
+                </div>
+                <span>Comida 7</span>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+            <a href="single-category.html">
+              <div class="category-tile">
+                <img width="200" height="200" src="fotos/B2.jpg" alt="Comida">
+                <div class="overlay">  
+                  <div class="text-image-hover">Comida</div>
+                </div>
+                <span>Comida 8</span>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-3 col-sm-4 col-xs-6 col-xxs-12">
+            <a href="single-category.html">
+              <div class="category-tile">
+                <img width="200" height="200" src="fotos/B3.jpg" alt="Comida">
+                <div class="overlay">  
+                  <div class="text-image-hover">Comida</div>
+                </div>
+                <span>Comida 9</span>
+              </div>
+            </a>
+          </div>
+        </section>
+
+    </div> <!-- final del container con la foto y los tres tiles -->
+
+    <footer class="panel-footer">  <!--pie de pagina-->
+        <div class="container">
+          <div class="row">
+            <section id="hours" class="col-sm-4"> <!--tres secciones en el pie de pagina-->
+              <span>Horario:</span><br>
+              Lunes-Viernes: 12:00 - 15:30<br>
+              Sábados: 12:00 - 16:30<br>
+              Domingos Cerrado
+              <hr class="visible-xs">  <!-- hr es una division (linea blanca) entre secciones cuando ponemos la pagina en tamaño xs-->
+            </section>
+            <section id="address" class="col-sm-4">
+              <span>Dirección:</span><br>
+              Universidad de Vigo<br>
+              36310 Vigo, España.
+              <p>* Entrega en un radio de 5km, sin coste añadido a partir de 25€.</p>
+              <hr class="visible-xs">
+            </section>
+            <section id="testimonials" class="col-sm-4">
+              <p id="comment">"El mejor restaurante en el que he puesto un pie en toda mi vida, 10/10!"</p>
+              <p id="comentarista">-- Aitor Tilla  --</p>
+              <p id="comment1">"La comida estaba tan buena que decidí pagar el triple, recomendaría sin pensármelo dos veces.</p>
+              <p id="comentarista1">-- Paca Garte --</p>
+            </section>
+          </div>
+          <div class="text-center">Diego Barreiro &copy; Copyright</div>
+        </div>
+      </footer>
+
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>    
+    <script src="js/script.js"></script> 
+</body>
+</html>
